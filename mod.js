@@ -25,6 +25,7 @@ function onLoad() {
   c.href = 'https://name2781.github.io/moreore/test.css';
   c.type = 'text/css';
   document.getElementsByTagName('head')[0].appendChild(c); 
+  alert("worked");
 }
 
 function dragElement(elmnt) {
