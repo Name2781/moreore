@@ -1,6 +1,5 @@
 function onLoad() {
-  var html = '';
-  html += '<div id="modMenu">';
+  var html = '<div id="modMenu">';
   html += '  <div id="modMenuHeader">Click here to move</div>';
   html += '  <p>Move</p>';
   html += '  <p>this</p>';
