@@ -1,1 +1,3 @@
-alert("loaded");
+function onLoad() {
+  alert("loaded");
+}
