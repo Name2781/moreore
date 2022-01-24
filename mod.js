@@ -12,12 +12,12 @@ function onLoad() {
 
   // Create the root div element for the popup
   var h = document.createElement("div");
-  h.id = "modMenu"; 
-  h.class="modMenu";
+  h.id = "modMenuDiv"; 
+  h.class="modMenuDiv";
   h.innerHTML = html;
   document.body.appendChild(h);   
 
-  dragElement = document.getElementById('modMenu');
+  dragElement = document.getElementById('modMenuDiv');
   
   var c = document.createElement('link');
   c.rel = 'stylesheet';
