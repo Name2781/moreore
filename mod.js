@@ -1,7 +1,7 @@
 function onLoad() {
   var html = '';
-  html += '<div id="mydiv">';
-  html += '  <div id="mydivheader">Click here to move</div>';
+  html += '<div id="modMenu">';
+  html += '  <div id="modMenuHeader">Click here to move</div>';
   html += '  <p>Move</p>';
   html += '  <p>this</p>';
   html += '  <p>DIV</p>';
@@ -10,11 +10,11 @@ function onLoad() {
 
   // Create the root div element for the popup
   var h = document.createElement("div");
-  h.id = "mapstogpxstrava_popup"; 
-  h.class="mapstogpxstrava_popup";
+  h.id = "modMenu"; 
+  h.class="modMenu";
   h.innerHTML = html;
   document.body.appendChild(h);   
- dragElement(document.getElementById('mydiv'));
+  dragElement(document.getElementById('modMenu'));
 
   var c = document.createElement('link');
   c.rel = 'stylesheet';
