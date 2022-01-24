@@ -5,7 +5,6 @@ function onLoad() {
   html += '  <p>this</p>';
   html += '  <p>DIV</p>';
   html += '</div>';
-  html += ';
 
   // Create the root div element for the popup
   var h = document.createElement("div");
