@@ -1,3 +1,5 @@
+var dragElement = "";
+
 function onLoad() {
   var html = '';
   html += '<div id="modMenu">';
@@ -14,8 +16,9 @@ function onLoad() {
   h.class="modMenu";
   h.innerHTML = html;
   document.body.appendChild(h);   
-  dragElement(document.getElementById('modMenu'));
 
+  dragElement = document.getElementById('modMenu');
+  
   var c = document.createElement('link');
   c.rel = 'stylesheet';
   c.media = 'all';
