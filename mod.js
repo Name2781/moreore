@@ -11,20 +11,34 @@ function onLoad() {
   h.id = "modMenuDiv"; 
   h.class="modMenuDiv";
   h.innerHTML = html;
-  document.body.appendChild(h);   
+  document.body.appendChild(h);  
+  
+  var cssId = 'modCss';  // you could encode the css path itself to generate id..
+  if (!document.getElementById(cssId))
+  {
+      var head  = document.getElementsByTagName('head')[0];
+      var link  = document.createElement('link');
+      link.id   = cssId;
+      link.rel  = 'stylesheet';
+      link.type = 'text/css';
+      link.href = 'https://name2781.github.io/moreore/test.css';
+      link.media = 'all';
+      head.appendChild(link);
+  }
+  
+  var newCssId = 'jquery-ui';  // you could encode the css path itself to generate id..
+  if (!document.getElementById(newCssId))
+  {
+      var head  = document.getElementsByTagName('head')[0];
+      var link  = document.createElement('link');
+      link.id   = newCssId;
+      link.rel  = 'stylesheet';
+      link.type = 'text/css';
+      link.href = 'code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css';
+      link.media = 'all';
+      head.appendChild(link);
+  }
 
-  var c = document.createElement('link');
-  c.rel = 'stylesheet';
-  c.media = 'all';
-  c.href = 'https://name2781.github.io/moreore/test.css';
-  c.type = 'text/css';
-  document.getElementsByTagName('head')[0].appendChild(c);
-  var b = document.createElement('link');
-  b.rel = 'stylesheet';
-  b.media = 'all';
-  b.href = 'code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css';
-  b.type = 'text/css';
-  document.getElementsByTagName('head')[0].appendChild(b);
   $('.modMenuDiv').draggable();
   // $('.modMenuDiv').resizable();
 }
