@@ -4,6 +4,7 @@
   background-color: #f1f1f1;
   border: 1px solid #d3d3d3;
   text-align: center;
+  z-index: 999;
 }
 
 #modMenuHeader {
@@ -12,4 +13,5 @@
   z-index: 10;
   background-color: #2196f3;
   color: #fff;
+  z-index: 999;
 }
