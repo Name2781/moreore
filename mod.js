@@ -7,7 +7,7 @@ function onLoad() {
   html += '</div>';
 
   // Create the root div element for the popup
-  var h = document.createElement("div");
+  var h = document.createElement("modMenuDiv");
   h.id = "modMenuDiv"; 
   h.class="modMenuDiv";
   h.innerHTML = html;
