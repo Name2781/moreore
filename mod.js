@@ -1,4 +1,5 @@
 function onLoad() {
+  alert("loaded!")
   var html = '<div id="modMenu">';
   html += '  <div id="modMenuHeader">Click here to move</div>';
   html += '  <p>Move</p>';
